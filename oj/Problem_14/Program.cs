@@ -1,0 +1,1 @@
+﻿Console.WriteLine( Math.Round( double.Parse(Console.ReadLine()!.Replace(".", "," ))) );
