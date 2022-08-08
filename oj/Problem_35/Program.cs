@@ -14,14 +14,16 @@ for(int i = 0; i < 3; i++)
     else
     {
         bool check = false;
-        for (int j = i + 1; j < 3; j++)
-            if (s1[i] == s2[j] || s1[j] == s2[i])
+        for (int j = 0; j < 3; j++)
+        {
+            if (s1[j] == s2[i])
             {
                 check = true;
                 break;
             }
+        }
 
-        if (check) ball++;
+        if (check == true) ball++;
     }
 }
 
